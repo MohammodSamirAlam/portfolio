@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+       <div style="color: aliceblue;" class="logo" data-aos="fade-down" data-aos-duration="1400">SAMIR.</div>
+       <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#header"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">services</a></li>
+      <li><a href="#contact">contact</a></li>
+      </ul>
+       <ul>
+          <li class="hideOnMobile"><a href="#header">Home</a></li>
+          <li class="hideOnMobile"><a href="#about">About</a></li>
+          <li class="hideOnMobile"><a href="#services">services</a></li>
+          <li class="hideOnMobile"><a href="#contact">contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1 style="color: rgb(231, 231, 231);" data-aos="fade-right" data-aos-duration="1200">Hello there,Its Samir.<br>Welcome to my portfolio.</h1><br>
+        <p style="color: rgb(255, 255, 255);" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="500">I am a web developer.Recently I have build my portfolio.I am a coding enthusiast.<br>If you are thinking about building a website,it is my job to help <br>you building your very own website.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <h1 data-aos="fade-right" data-aos-duration="1200" class="sub-title">About Me</h1>
+          <p class="element">Hi, I am Samir,a young webdeveloper.I am 15 years old and currently reads in class 9.<br>Coding is my passion.I am trained from shanti technical training institute.<br>From a young age, I've been captivated by the power of technology to solve<br> real-world problems. This led me to pursue a career in software <br>development, where I thrive on the challenge of creating elegant and efficient solutions. </p>
+        </div>
+        <div class="about-col-2">
+          <img data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500" class="img" src="C:\Users\User\OneDrive\Desktop\portfolio\IMG_20250423_105605.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title" style="text-decoration: none;" data-aos="fade-down" data-aos-duration="1500">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fi fi-rr-display-code"></i>
+          <h2>Web Design</h2>
+          
+          
+         
+          <a href="#" class="btn">learn more</a>
+        </div>
+      </div>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+
+              
+            <p><i class="fi fi-rr-envelope"></i> bzsiansamir@gmail.com</p>
+            
+            <p><i class="fi fi-sr-phone-rotary"></i> 01753761736</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/abstrusely.samirr/"><i class="fi fi-brands-instagram"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100083367608251"><i class="fi fi-brands-facebook"></i></a>
+              <a href="https://discord.com/channels/@me"><i class="fi fi-brands-discord"></i></a>
+              
+          </div>  
+          <a href="cv/Grey Modern Professional CV Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display ='flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display ='none'
+  }
+</script>
+</body>
+
+</html>
